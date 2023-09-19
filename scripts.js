@@ -86,6 +86,12 @@ function play_set(round_amount) {
     }
     if(player_score > computer_score){
         alert("You win! With a score of " + player_score + " to " + computer_score);
+    
+    }else if (player_score < computer_score){
+        alert("You Lose! With a score of " + player_score + " to " + computer_score);
+    }
+    else if( player_score == computer_score){
+        alert("Draw! With a score of " + player_score + " to " + computer_score);
     }
     
 }
