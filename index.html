@@ -10,12 +10,52 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="styles.css">
     </head>
     <body>
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
+        
+        <div class="round_count">
+            <h1>Round:</h1>
+            <h1 id="round_counter">0</h1>
+            <h1 class ='game_title'>Rock, Paper, Scissors!</h1>
+        </div>
+        <div class="player_counter">
+            <h1>You:</h1>
+            <h1 id="player_score_counter">0</h1>
+        </div>
+        <div class="computer_counter">
+            <h1>Computer:</h1>
+            <h1 id="computer_score_counter">0</h1>
+        </div>
+        
+        <div class="container">
+            <div class="computer-inventory">
+                <h1 class="computer-name">Computer</h1>
+                <button id="computer_rock"><img src="rock_hand_final.png" alt="rock"> <p>Rock</p></button>
+                <button id="computer_paper"><img src="paper_hand_final.png" alt="rock"><p>Paper</p></button>
+                <button id="computer_scissors"><img src="scissors_hand_final.png" alt="rock"><p>Scissors</p></button>
+            </div>
+            <br>
+            <div class="announcer_container">
+            <h1 id ="announcer">...</h1>
+            <div id="round_amounts">
+                <button id="1_button">1</button>
+                <button id="3_button">3</button>
+                <button id="5_button">5</button>
+            </div>
+            </div>
+            <br>
+            <div class="player-inventory">
+                <button id="rock_button"><img src="rock_hand_final.png" alt="rock"> <p>Rock</p></button>
+                <button id="paper_button"><img src="paper_hand_final.png" alt="rock"><p>Paper</p></button>
+                <button id="scissors_button"><img src="scissors_hand_final.png" alt="rock"><p>Scissors</p></button>
+                <h1 class="player-name">You</h1>
+                
+            </div>
+        </div>
         
         <script src="scripts.js" async defer></script>
     </body>
